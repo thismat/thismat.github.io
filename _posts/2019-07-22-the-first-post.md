@@ -1,13 +1,26 @@
 ---
 layout: post
-title: The First Post
+title: Goals
 ---
 
-# This is it, the very beginning. 
+These are the goals for the rest of the year. A retrospective will be provided at the end of the year.
 
-Just kidding, I've done this before. Started so many blogs, stopped blogging so many times.
+Last updated: 2020-08-03
 
-So I won't be calling this one a blog. This is a storage locker for things that interest me to live. Following a set of rules listed below
-I intend to just use this for record keeping sake.
+Legend:
+- ❌ Not Finished
+- 🚧 In Progress
+- ✅ Completed
+- 📚 Research
 
-Onwards and upwards we go.
+
+# 2020 Goals
+
+- ❌ Data Structures Refresher
+- ❌ Algorithm Refresher
+- ❌ Reach Dan rank in Codewars
+- ❌ Finish Gang of Four Design Patterns book with notes
+- ❌ thismat.com redesigned
+- ❌ Learn TailwindCSS
+- ❌ Create visualized Data Structures
+- ❌ Create visualized Algorithms 
