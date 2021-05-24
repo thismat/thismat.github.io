@@ -1,0 +1,54 @@
+:root {
+  --background: #2E3440;
+  --foreground: #E5E9F0;
+
+  --highlight: #EBCB8B;
+}
+
+/* ----------------------
+ * Fonts
+ * ------------------- */
+@font-face {
+  font-family: FiraSans;
+  src: url(fonts/FiraSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu-Medium.ttf);
+}
+
+.header-font {
+  font-family: Ubuntu;
+}
+
+.body-font {
+  font-family: FiraSans;
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "FiraSans", sans-serif;
+  font-size: 1em;
+}
+
+header {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+header h1 {
+  margin-bottom: 0.2em;
+}
+
+header p {
+  text-indent: 0.5em;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 5em;
+}
+
