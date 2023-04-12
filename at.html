@@ -44,7 +44,8 @@
         }
 
         .color-input {
-            width: 40px;
+            width: 75px;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -88,6 +89,7 @@
             B: <input type="number" min="0" max="255" value="255" class="color-input" id="color-blue">
         </label>
         <button id="change-color">Change Background Color</button>
+        <input type="color" id="color-picker" value="#ffffff">
     </div>
 
     <script>
@@ -131,6 +133,15 @@
           const blue = blueInput.value;
 
           document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+        });
+
+        const colorPicker = document.getElementById('color-picker');
+
+        colorPicker.addEventListener('input', () => {
+            document.body.style.backgroundColor = colorPicker.value;
+            redInput.value = parseInt(colorPicker.value.substr(1,2), 16);
+            greenInput.value = parseInt(colorPicker.value.substr(3,2), 16);
+            blueInput.value = parseInt(colorPicker.value.substr(5,2), 16);
         });
     </script>
 </body>
