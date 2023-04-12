@@ -114,6 +114,7 @@
         </label>
         <button id="tag-change-color">Change Tag Color</button>
         <input type="color" id="tag-color-picker" value="#ffffff">
+        <button id="tag-bg-toggle">Toggle Contain/Fill</button>
     </div>
 
     <script>
@@ -199,6 +200,19 @@
           let tags = document.getElementsByClassName('april-tag');
           for (let t of tags) {
             t.style.backgroundColor = `rgb(${tagRed}, ${tagGreen}, ${tagBlue})`;
+          }
+        });
+
+        const tagToggle = document.getElementById('tag-bg-toggle');
+
+        tagToggle.addEventListener('click', () => {
+          let tags = document.getElementsByClassName('april-tag');
+          for (let t of tags) {
+            if (t.style.backgroundSize == 'contain') {
+              t.style.backgroundSize = 'cover';
+            } else {
+              t.style.backgroundSize = 'contain';
+            }
           }
         });
     </script>
