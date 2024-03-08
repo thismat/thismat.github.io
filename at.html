@@ -39,25 +39,24 @@
       visibility: hidden;
     }
 
-    .tag-color-controls {
-      position: fixed;
-      top: 70px;
-      left: 10px;
-      display: flex;
-      gap: 5px;
+    .color-input {
+      width: 75px;
+      font-size: 24px;
     }
 
-    .color-controls {
+    #vis-button {
+      width: 100%;
+      text-color: #000;
+      display: block;
+    }
+
+    #controls {
       position: fixed;
       top: 10px;
       left: 10px;
       display: flex;
+      flex-direction: column;
       gap: 5px;
-    }
-
-    .color-input {
-      width: 75px;
-      font-size: 24px;
     }
   </style>
 </head>
@@ -119,6 +118,10 @@
       <!-- <button id="tag-change-color">Change Tag Color</button> -->
       <input type="color" id="tag-color-picker" value="#1d2c58">
       <!-- <button id="tag-bg-toggle">Toggle Contain/Fill</button> -->
+    </div>
+
+    <div class="vis-control">
+      <button id="vis-button">V</button>
     </div>
   </div>
 
@@ -203,18 +206,11 @@
       }
     });
 
-    // const tagToggle = document.getElementById('controls');
-    //
-    // tagToggle.addEventListener('click', () => {
-    //   let tags = document.getElementsByClassName('april-tag');
-    //   for (let t of tags) {
-    //     if (t.style.backgroundSize == 'contain') {
-    //       t.style.backgroundSize = 'cover';
-    //     } else {
-    //       t.style.backgroundSize = 'contain';
-    //     }
-    //   }
-    // });
+    const visToggle = document.getElementById('vis-button');
+
+    visToggle.addEventListener('click', () => {
+      container.style.visibility = container.style.visibility == 'hidden' ? '' : 'hidden';
+    });
   </script>
 </body>
 
